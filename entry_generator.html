@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patchouli Entry Generator</title>
+    <link rel="icon" type="image/x-icon" href="patchouli_logo.ico">
+    <link href="guide_maker.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body style="padding-bottom:60px;">
+    <div class="center text-center py-3" style="background-color:rgb(231, 229, 229); border-bottom: 2px solid black; box-shadow: 0 6px 12px -3px rgba(0, 0, 0, 0.4);">
+        <h1>ENTRY GENERATOR</h1>
+    </div>
+    <div class="container mt-4">
+        <div class="form-group">
+            <label for="name"><b>Entry Title</b></label>
+            <input type="text" class="form-control" id="name" placeholder="Test Entry">
+        </div>
+        <div class="form-group">
+            <label for="icon"><b>Icon</b></label>
+            <input type="text" class="form-control" id="icon" placeholder="minecraft:writable_book">
+        </div>
+        <div class="form-group">
+            <label for="category"><b>Category</b></label>
+            <input type="text" class="form-control" id="category" placeholder="your_book_namespace_change_me:test_category">
+        </div>
+        <div class="form-group">
+            <label for="text"><b>Text</b></label>
+            <textarea class="form-control" id="text" rows="4" placeholder="This is a test entry, but it should show up!"></textarea>
+        </div>
+        <div id="pages-container"></div>
+        <button id="add-page" class="btn btn-secondary mb-3">Add Page</button>
+        <div class="center">
+        <div class="json-area">
+            <h4 style="text-align:center; color:yellow;border-bottom:2px solid greenyellow">JSON</h4>
+            <pre style="color:yellow" id="output"></pre>
+        </div>
+    </div>
+        <br>
+        <div class="text-center center2">
+            <a href="guide_maker.html"><button class="btn btn-secondary return">Return to Menu</button></a>
+            <button class="btn btn-primary generate" id="generate">Generate JSON</button>
+        </div>
+    </div>
+    <script src="generator3.js"></script>
+</body>
+</html>

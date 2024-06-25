@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patchouli Book Generator</title>
+    <link rel="icon" type="image/x-icon" href="patchouli_logo.ico">
+    <link href="guide_maker.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <div class="center text-center py-3" style="background-color:rgb(231, 229, 229); border-bottom: 2px solid black; box-shadow: 0 6px 12px -3px rgba(0, 0, 0, 0.4);">
+        <h1>BOOK GENERATOR</h1>
+    </div>
+    <div class="center">
+    <div class="forms">
+        <label for="exampleInputEmail"><b>Mod Title</b></label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="My First Book!">
+        <br>
+        <label for="landing"><b>Landing Text</b></label>
+        <input type="text" class="form-control" id="landing" aria-describedby="emailHelp" placeholder="Welcome to Patchouli">
+        <br>
+        <label for="version"><b>Version Number</b></label>
+        <input type="number" class="form-control" id="version" aria-describedby="emailHelp" placeholder="1">
+        <br>
+        <label for="tab"><b>Creative Tab</b></label>
+        <input typ="text" class="form-control" id="tab" aria-describedby="emailHelp" placeholder="minecraft:tools_and_utilities">
+    </div>
+    </div>
+    <br>
+    <div class="center">
+    <div class="json-area">
+        <h4 style="text-align:center; color:yellow;border-bottom:2px solid greenyellow">JSON</h4>
+        <h5 style="color:yellow" id="output"></h5>
+    </div>
+</div>
+    <div class="center2">
+        <a href="guide_maker.html"><button class="btn btn-secondary">Return to Menu</button></a>
+        <button class="btn btn-primary" id="generate">Generate JSON</button>
+    </div>
+    <script src="generator1.js"></script>
+</body>
+</html>

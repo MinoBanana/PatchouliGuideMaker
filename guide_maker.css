@@ -1,0 +1,124 @@
+body{
+    background-color:rgb(243, 243, 236);
+}
+
+.fields{
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    justify-content: center;
+    display: flex;
+    gap: 100px;
+}
+
+.menu-option{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px; /* Adjust as needed */
+    padding: 20px; /* Adjust as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 
+                0 6px 20px rgba(0, 0, 0, 0.3); /* Adjust as needed */
+    text-align: center; /* Center the text */
+    max-width: 300px; /* Adjust as needed */
+    margin: 20px auto; 
+    border: 0px;
+    transition: 0.3s
+}
+
+.menu-option:hover{
+    transform: scale(110%);
+    cursor:pointer;
+    box-shadow: 0 4px 8px rgba(52, 31, 23, 0.3), 
+                0 6px 20px rgba(52, 31, 23, 0.3); /* Adjust as needed */
+    
+}
+
+.menu-option:hover .menu-icon{
+    filter: invert(48%) sepia(46%) saturate(2555%) hue-rotate(202deg) brightness(106%) contrast(98%);
+
+}
+
+.menu-icon{
+    width: 150px;
+    height: 150px;
+    transition: 0.2s;
+}
+
+.menu-icon-2{
+    width: 120px;
+    height: 120px;
+}
+
+.center{
+    display:flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.forms{
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    border: 0.1px solid black;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+button:hover{
+    transform: scale(110%);
+    color:rgb(8, 70, 66);
+}
+
+.generate{
+    background-color:rgb(118, 211, 118);
+    color:rgb(8, 70, 66);
+    
+}
+
+.return{
+    background-color:rgb(211, 118, 118);
+    color:rgb(8, 70, 66);
+    
+}
+
+.bookmark {
+    position: absolute;
+    top: -0;
+    right: 0;
+    width: 50px; /* Adjust as necessary */
+    height: auto;
+    transform:rotate(180deg);
+    transition: 0.3s
+}
+
+
+.center2{
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.json-area {
+    max-width: 500px;
+    max-height: 400px;
+    background-color: black;
+    border: 2px solid grey;
+    border-radius: 12px;
+    overflow: auto; /* Allow scrolling if content exceeds max dimensions */
+    padding: 10px; /* Add some padding for better readability */
+}
+
+.json-area pre {
+    white-space: pre-wrap; /* Allow wrapping of long lines */
+    word-break: break-all; /* Break long words to fit within the container */
+    color: yellow; /* Ensure text is visible */
+}
